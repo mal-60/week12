@@ -7,7 +7,6 @@ function handleClickMeButton ()
 
 clickMeButton.addEventListener("click", handleClickMeButton);
 
-
 // clickMeButton.removeEventListener("click", handleClickMeButton);
 
 
@@ -15,3 +14,19 @@ clickMeButton.addEventListener("click", handleClickMeButton);
 
 
 // clickMeButton.addEventLister("click", handleClickMeButton, {one:true});
+
+function changeBGColor()
+{
+    // document.body.style.backgroundColor = "pink";
+    document.body.classList.add("pink");
+}
+
+clickMeButton.addEventListener("click", changeBGColor);
+
+function changeText ()
+{
+    if (clickMeButton.textContent )
+    clickMeButton.textContent = "Clicked";
+}
+
+clickMeButton.addEventListener("click", changeText);
