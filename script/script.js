@@ -56,5 +56,13 @@ clickMeButton.addEventListener("click", createAddPara);
 
 function changeBGGreen (event)
 {
+    console.log(event.target);
     event.target.classList.add("green");
 }
+
+const buttonContainer = document.querySelector(".buttonContainer");
+buttonContainer.addEventListener("mousemove, changeBGGreen");
+
+buttonContainer.addEventListener("click", changeParaToColor);
+
+function changeParaToColor ()
